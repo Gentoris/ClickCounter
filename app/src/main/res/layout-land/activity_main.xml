@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/black"
+    >
+
+    <Button
+        android:id="@+id/buttonHozzaad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@id/TextViewOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="238dp"
+
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/TextViewOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonHozzaad"
+        android:layout_marginTop="-41dp"
+        android:clickable="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonKivon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/TextViewOut"
+        android:layout_alignEnd="@id/TextViewOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="237dp"
+        android:text="-" />
+
+
+</RelativeLayout>
